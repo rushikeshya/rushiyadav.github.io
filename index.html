@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f386151103.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#interests">Interest</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>B.Tech Graduate</p>
+            <h1>Hi, I'm <span>Rushikesh</span> Yadav<br>From Maharashtra, India</h1>
+        </div>
+    </div>
+</div>
+<!-----------about--------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user rushi.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi, I'm Rushikesh Yadav, a graduate student with a passion for data science and machine learning. I completed my B.Tech in Mechanical Engineering from SKN Sinhgad college of Engineering, Pandharpur in 2022.
+                    While studying mechanical engineering, I developed a curious interest in the  data science and machine learning field. After graduation, I began exploring these areas in more depth, taking online courses and working on personal projects to build my skills.
+                    I am now pursuing a career in data science and machine <span>learning.</span><br>In my free time, I enjoy reading to books and watching motivational video on youtube.<br>I believe that a well-rounded life outside of work is important for maintaining creativity and perspective.</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Machine Learning</span><br>Machine Learning Algorithms</li>
+                            <li><span>Python</span><br>Pandas, Numpy,  Matplotlib, Seaborn, Sci-Kit Learn</li>
+                            <li><span>SQL</span><br>Microsoft SQL server</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certifications">
+                        <ul>
+                            <li><span>Internship on Python at Pantech Prolabs India Pvt Ltd.</span><br><a href="/certificates/certificate-python.pdf">Certificate</a>
+                            </li>
+                            <li><span>Internship on Data Analytics at Pantech Prolabs India Pvt Ltd.</span><br><a href="certificates/certificate-data-analytics.pdf">Certificate</a>
+                            </li>
+                            <li><span>Internship on Machine Learning at Pantech Prolabs India Pvt Ltd.</span><br><a href="certificates/certificate-machine-learning.pdf">Certificate</a>
+                            </li>
+                            <li><span>5-DAYS WORKSHOP ON SQL at Skill Nation</span><br><a href="certificates/SQL-Certificate.pdf">Certificate</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor of Technology (Mechanical)</span><br>SKN Sinhgad College of Enginerring, Pandharpur</span><br>Percentage 79.48</span><br>Completed in 2022</li>
+                            <li><span>Diploma</span><br>Shivaji Polytechnic, Atpadi</span><br>Percentage 66.41</span><br>Completed in 2019</li>
+                            <li><span>Secondary School Certification(SSC)</span><br>Dighanchi High-School, Dighanchi</span><br>Percentage 76</span><br>Completed in 2016</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------Interest----------------->
+<div id="interests">
+    <div class="container">
+        <h1 class="sub-title">My Interests</h1>
+        <div class="interests-list">
+            <div>
+                <i class="fa-solid fa-laptop-code" style="color: #fff;"></i>
+                <h2>Data scientist</h2>
+                <p> A data scientist is responsible for collecting, processing, and analyzing large and complex datasets using statistical and machine learning techniques. They use their findings to provide insights and help organizations make data-driven decisions.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-chart-pie" style="color: #fff;"></i>
+                <h2>Data Analyst</h2>
+                <p>A data analyst is responsible for collecting, cleaning, and analyzing data to identify patterns and trends. They help organizations make informed decisions by presenting data in a way that is easy to understand.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-gears" style="color: #fff;"></i>
+                <h2>Machine Learning Engineer</h2>
+                <p>A machine learning engineer is responsible for designing, building, and deploying machine learning models. They work with data scientists to develop algorithms and deploy them in real-world applications.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-database" style="color: #fff;"></i>
+                <h2>SQL Developer</h2>
+                <p>A SQL developer is responsible for designing, developing, and maintaining databases using SQL (Structured Query Language). They create and manage databases, write and optimize SQL queries, and ensure the security and integrity of the data.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------------Project-------------------->
+<div id="project">
+    <div class="container">
+        <h1 class="sub-title">My Project</h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="images/project1.png" alt="project1" style="max-height: 500px;">
+                <div class="layer">
+                    <h3>BOOK RECOMMENDATION SYSTEM</h3>
+                    <p>In this project, I created a machine learning model that uses data about books, their authors, and their reader's ratings to make book recommendations with the help of both Popularity-Based and Collaborative-Based Recommendation Systems.</p>
+                    <a href="https://github.com/rushikeshya/Book_Recommendation_System-Machine-Learning-Project"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/project2.png" alt="project2" style="max-height: 500px;">
+                <div class="layer">
+                    <h3>DIGIT RECOGNITION SYSTEM</h3>
+                    <p>In this project, the model was trained using a supervised machine learning algorithm, such as a Random Forest classifier, to identify the patterns of each digit in a CSV file and display them in image format.</p>
+                    <a href="https://github.com/rushikeshya/Digit-Recognition-using-RANDOM-FOREST-Pantech"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/project3.jpg" alt="project3" style="max-height: 500px;">
+                <div class="layer">
+                    <h3>TIME SERIES ANALYSIS</h3>
+                    <p>Time series analysis is a statistical technique that is used to analyze data points collected over time. In this project, the focus was on performing time series analysis on shop data that includes information on sales and items. </p>
+                    <a href="https://github.com/rushikeshya/TSA-ARIMA-Model_1"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/rushikeshya?tab=repositories" class="btn">See more</a>
+    </div>
+</div>
+
+<!---------------contact------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact</h1>
+                <p><i class="fa-solid fa-envelope"></i> rushikeshyadav301220@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 7499101323</p>
+                <p><i class="fa-brands fa-whatsapp"></i> 7448069149</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/rushikesh-yadav11/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/rushikeshya"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.hackerrank.com/rushikeshyadav31"><i class="fa-brands fa-hackerrank"></i></a>
+                </div>
+                <a href="images/my-resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; 2023 rushikesh yadav <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxO93zaeQZGjY1BA1HlBdWAU4YrH34rZzJ_VsfBQbNdKYm3CzMnN--Jo8FWKvlzBV1E/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById(msg)
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML= "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
