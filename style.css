@@ -483,7 +483,9 @@ nav .fas{
 @media only screen and (max-width: 570px){
     #header{
         background-image: url(images/linkedin_bg_for_mobile.png);
-        background-position: center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
     }
     .header-text{
         margin-top: 100%;
