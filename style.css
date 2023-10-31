@@ -442,12 +442,15 @@ form .btn2{
 }
 
 .download-button:hover {
-    transform: translateX(-2px);
-    background-color: #d31386;
+    transform: translateY(-8px);
+    background-color: rgb(5, 177, 177);
 }
 
 .button-text {
     display: inline-block;
+}
+.button-text:hover {
+    transform: translateY(8px);
 }
 
 .arrow-icon {
@@ -458,7 +461,7 @@ form .btn2{
 }
 
 .download-button:hover .arrow-icon {
-    transform: translateY(4px);
+    transform: translateY(-4px);
     animation: shake 0.5s ease infinite;
 }
 
