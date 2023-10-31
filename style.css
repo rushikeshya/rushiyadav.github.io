@@ -14,7 +14,7 @@ body{
 #header{
     width: 100%;
     height: 100vb;
-    background-image: url(images/Backgroundnew.png);
+    background-image: url(images/linkedin_background.png);
     background-size: cover;
     background-position: center;
 }
@@ -30,7 +30,8 @@ nav{
 }
 
 .logo{
-    width: 140px;
+    width: 200px;
+    height: 70px;
 }
 
 nav ul li{
@@ -98,7 +99,7 @@ nav ul li a:hover::after{
 }
 .tab-title{
     display: flex;
-    margin: 20px 0 40px;
+    margin: 20px 0 10px;
 }
 .tab-links{
     margin-right: 50px;
@@ -111,7 +112,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff0000;
+    background: rgb(5, 177, 177);
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -135,17 +136,17 @@ a {
 }
 
 .tab-contents ul li span{
-    color: #b54769;
-    font-size: 16px;
+    color: #fff;
+    font-size: 18px;
 }
 .tab-contents{
-    display: none;
+    display: block;
 }
 .tab-contents.active-tab{
     display: block;
 }
 
-/*-------------interests----------------*/
+/*-------------skills(interests)----------------*/
 #interests{
     padding: 30px 0;
 }
@@ -182,9 +183,104 @@ a {
 }
 
 .interests-list div:hover{
-    background: #ff004f;
+    background: rgb(5, 177, 177);
     transform: translateY(-10px);
 }
+/*---------------------------------------------------certificates---------------------------------------*/
+#certificates{
+    padding: 50px 0;
+}
+.image-caption {
+    position: absolute;
+    top: 10px; /* Adjust this value to position the caption as desired */
+    left: 10px; /* Adjust this value to position the caption as desired */
+    background-color: rgb(5, 177, 177);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+  }
+  
+
+.project{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.project img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{      /*---------------certificate text and center-------------*/ 
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), rgb(5, 177, 177));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{        /*---------------certificate link logo-------------*/ 
+    margin-top: 20px;
+    color: rgb(5, 177, 177);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.project:hover img{
+    transform: scale(1.1);
+}
+
+.project:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid rgb(5, 177, 177);
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: rgb(5, 177, 177);
+}
+
+
+
+
+
+
 
 /*---------------project-------------*/
 #project{
@@ -212,7 +308,7 @@ a {
 .layer{      /*---------------project text and center-------------*/ 
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(0,0,0,0.6), rgb(5, 177, 177));
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -233,7 +329,7 @@ a {
 }
 .layer a{        /*---------------project link logo-------------*/ 
     margin-top: 20px;
-    color: #ff004f;
+    color: rgb(5, 177, 177);
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -254,7 +350,7 @@ a {
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff004f;
+    border: 1px solid rgb(5, 177, 177);
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -262,7 +358,7 @@ a {
     transition: background 0.5s;
 }
 .btn:hover{
-    background: #ff004f;
+    background: rgb(5, 177, 177);
 }
 
 /*-------------------contact------------------------*/
@@ -276,7 +372,7 @@ a {
     margin-top: 30px;
 }
 .contact-left p i{
-    color: #ff004f;
+    color: rgb(5, 177, 177);
     margin-right: 15px;
     font-size: 25px;
 }
@@ -292,12 +388,12 @@ a {
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #ff004f;
+    color: rgb(5, 177, 177);
     transform: translateY(-5px);
 }
 .btn.btn2{
     display: inline-block;
-    background: #ff004f;
+    background: rgb(5, 177, 177);
 }
 .contact-right form{
     width: 100%;
@@ -330,6 +426,49 @@ form .btn2{
 .copyright i{
     color: #ff004f;
 }
+/* --------code for animation of dawnload button- ---*/
+.download-button {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #0074cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    overflow: hidden;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.download-button:hover {
+    transform: translateX(-2px);
+    background-color: #d31386;
+}
+
+.button-text {
+    display: inline-block;
+}
+
+.arrow-icon {
+    display: inline-block;
+    margin-left: 5px;
+    transform: translateY(0);
+    transition: transform 0.4s;
+}
+
+.download-button:hover .arrow-icon {
+    transform: translateY(4px);
+    animation: shake 0.5s ease infinite;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    50% { transform: translateX(3px); }
+    75% { transform: translateX(-4px); }
+    100% { transform: translateX(0); }
+}
 
 /*--------------CSS For Small Screen---------------*/
 nav .fas{
@@ -339,7 +478,7 @@ nav .fas{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(images/phone\ background\ new.png);
+        background-image: url(images/linkedin_bg_for_mobile.png);
     }
     .header-text{
         margin-top: 100%;
@@ -353,7 +492,7 @@ nav .fas{
         font: size 25px;;
     }
     nav ul{
-        background: #ff004f;
+        background: rgb(5, 177, 177);
         position: fixed;
         top: 0;
         right: -200px;
