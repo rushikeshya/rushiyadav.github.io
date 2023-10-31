@@ -480,7 +480,7 @@ nav .fas{
 }
 
 
-@media only screen and (max-width: 570px){
+@media only screen and (max-width: 768px){
     #header{
         background-image: url(images/linkedin_bg_for_mobile.png);
         background-size: cover;
