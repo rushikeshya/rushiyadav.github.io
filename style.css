@@ -432,7 +432,7 @@ form .btn2{
     position: relative;
     text-decoration: none;
     padding: 10px 20px;
-    background-color: #0074cc;
+    background-color: rgb(5, 177, 177);
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -470,16 +470,16 @@ form .btn2{
     100% { transform: translateX(0); }
 }
 
+
 /*--------------CSS For Small Screen---------------*/
 nav .fas{
     display: none;
 }
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 570px){
     #header{
         background-image: url(images/linkedin_bg_for_mobile.png);
-        background-size: cover;
         background-position: center top;
     }
     .header-text{
