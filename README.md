@@ -1,8 +1,4 @@
 # Please Visit my Portfolio Webpages
 <br>
 https://rushikeshya.github.io/rushiyadav.github.io/
-<br>
-<img>
-![Alt image](https://github.com/rushikeshya/rushiyadav.github.io/assets/118998917/0a18dc05-97dd-47f0-bd57-1cd8ed9bb2d0)
-</img>
-
+![Portfolio Background](https://github.com/rushikeshya/rushiyadav.github.io/assets/118998917/52b40d75-0241-4880-a795-6a220fb1e721)
