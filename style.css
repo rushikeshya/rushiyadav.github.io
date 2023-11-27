@@ -506,6 +506,7 @@ form .btn2{
   
   .social-icons-front a:hover {
     transform: scaleX(1.2) translateX(-20%);
+    color: rgb(5, 177, 177);
   }
   .social-icons-front a:hover::before {
     content: attr(data-text);
@@ -514,7 +515,7 @@ form .btn2{
     right: 100%; /* Adjust the distance from the icon */
     transform: translateY(-50%);
     background: aqua;
-    color: rgb(255, 255, 255);
+    color: rgb(14, 14, 14);
     padding: 5px;
     border-radius: 5px;
     white-space: nowrap;
