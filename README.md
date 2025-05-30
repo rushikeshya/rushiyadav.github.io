@@ -5,5 +5,6 @@
 </p>
 
 <p>
-  <img src="https://github.com/rushikeshya/rushiyadav.github.io/assets/118998917/52b40d75-0241-4880-a795-6a220fb1e721" alt="Portfolio Background">
+![demo of portfolio](https://github.com/user-attachments/assets/c45cb5c5-da97-4bb6-b4ad-529545f6a471)
+
 </p>
